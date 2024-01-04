@@ -30,3 +30,39 @@ const myFunc = function(){
 // typeof(Symbol) => Symbol
 
 
+
+// +++++++++++++++++++  Stack and Heap  +++++++++++++++++
+
+
+// Primitive data types  ==> Stack  (Value type)
+
+// Non-Primitive data types  ==> Heap  (Reference type)
+
+let username = "suraj";
+
+let anotherUsername = username;   // value of the username is copied and assigned to anotherUsername.
+
+anotherUsername = "sourav";
+
+console.log(username);  //suraj
+console.log(anotherUsername);   //sourav
+
+
+let userOne = {
+    name: "suraj",
+    email: "suraj@gmail.com"
+};
+
+let userTwo = userOne;   // reference of the userOne is assigned to userTwo;
+
+userTwo.email = "sourav@gmail.com";
+
+console.log(userOne.email); //sourav@gmail.com
+console.log(userTwo.email); //sourav@gmail.com
+
+
+
+
+
+
+
