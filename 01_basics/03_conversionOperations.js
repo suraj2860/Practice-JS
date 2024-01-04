@@ -23,3 +23,11 @@ console.log(boolIsLoggedIn);
 // "suraj" => true
 
 
+//*************** Operations **************
+
+let value = 3;
+let negValue = -value;
+
+console.log(negValue);
+
+
