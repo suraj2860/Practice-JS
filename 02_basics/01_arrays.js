@@ -28,7 +28,7 @@ const anotherArray = myArr2.slice(1,3);     // returns an array with elements [1
 console.log("sliced array : ", anotherArray);
 console.log("original array : ", myArr2);
 
-const anotherArray2 = myArr2.splice(1,3);   // returns an array with elements [1,3]. it removes the elements from original array.
+const anotherArray2 = myArr2.splice(1,3);   // returns an array with elements [1,3]. it removes the elements from original arrays.
 
 console.log("spliced array : ", anotherArray2);
 console.log("original array : ", myArr2);
