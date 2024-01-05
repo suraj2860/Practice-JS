@@ -33,3 +33,9 @@ console.log(Object.entries(obj));
 console.log(obj.hasOwnProperty("name"));
 
 
+// Object De-structuring
+
+const {name: username} = obj;
+
+console.log(username);
+
