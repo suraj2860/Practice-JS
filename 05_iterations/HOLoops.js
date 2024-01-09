@@ -42,7 +42,7 @@ for(const val in myObj){
 }
 
 
-// forEach  Loop
+// forEach  function
 
 const coding = ["js", "py", "C#", "C++", "java"];
 
@@ -66,3 +66,37 @@ function printMe(){
 }
 
 coding.forEach(printMe);
+
+// filter function 
+
+const nums = [1,2,3,4,5,6,7,8,9];
+
+const temp = nums.forEach( (item) => item > 5);  // for each doesnot return any value.
+
+console.log(temp);
+
+const arr2 = nums.filter( (item) => item > 5);  // filter will return some value.
+
+console.log(arr2);
+
+
+// map function
+
+const arr3 = nums.map( (item) => item + 10)
+
+console.log(arr3);
+
+// chaining
+
+const newNums = nums
+                .map( (item) => item * 10)
+                .map( (item) => item + 1)
+                .filter( (item) => item > 40);
+
+console.log(newNums);
+
+// reduce function
+
+const arr4 = nums.reduce( (acc, curr_value) => acc + curr_value, 1)
+
+console.log(arr4);
