@@ -46,17 +46,20 @@ for(const val in myObj){
 
 const coding = ["js", "py", "C#", "C++", "java"];
 
-coding.forEach(function (item){
+coding.forEach(function (item){      // for each takes call-back functions as argument.
     console.log(item)
 });
 
-coding.forEach( (item) => {
+coding.forEach( (item) => {     // foreach using arrow functions
     console.log(item)
 });
 
 coding.forEach( (item, index, arr) => {
     console.log(`value : ${item} , index : ${index}, array : ${arr}`);
 });
+
+
+// passing the reference of the function in forEach loop.
 
 function printMe(){
     console.log("Hello");
